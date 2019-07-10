@@ -192,10 +192,12 @@
     /*==================================================================
     [ Play video 01 ]*/
     try {
-        var srcOld = $('.video-mo-01').children('iframe').attr('src');
+        var srcOld = $('.video-mo-01').children('iframe').attr('images/video-01.mp4');
 
-        $('[data-target="#modal-video-01"]').on('click',function(){
+        $('[data-target="#modal-video-01"]').on('click',() => {
             $('.video-mo-01').children('iframe')[0].src += "&autoplay=1";
+
+
 
             setTimeout(function(){
                 $('.video-mo-01').css('opacity','1');
